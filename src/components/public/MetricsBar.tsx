@@ -25,9 +25,9 @@ export const MetricsBar: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-16 border-y border-gray-200">
+    <section className="bg-[#F5F1FB] py-8 sm:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+        <div className="bg-white rounded-xl border border-[#E8E1F3] px-6 sm:px-8 py-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#EEE9F5]">
           {metrics.map((item, idx) => (
             <div
               key={idx}
@@ -35,13 +35,13 @@ export const MetricsBar: React.FC = () => {
                 idx > 0 ? 'pt-6 sm:pt-0 sm:pl-8' : ''
               }`}
             >
-              <div className="text-3xl sm:text-4xl font-black text-[#0B1926] tracking-tight">
+              <div className="text-3xl sm:text-4xl font-bold text-[#211A33] tracking-tight">
                 {item.value}
               </div>
-              <div className="text-sm font-bold text-[#087F83] mt-1">
+              <div className="text-sm font-semibold text-[#7651C8] mt-1">
                 {item.label}
               </div>
-              <p className="text-xs text-[#73818A] mt-1 leading-relaxed">
+              <p className="text-xs text-[#777184] mt-1 leading-relaxed">
                 {item.sublabel}
               </p>
             </div>

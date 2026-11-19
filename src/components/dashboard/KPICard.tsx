@@ -40,7 +40,7 @@ export const KPICard: React.FC<KPICardProps> = ({
         </div>
       </div>
 
-      <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs">
+      <div className="mt-4 pt-3 border-t border-gray-100 flex flex-col items-start gap-1 text-xs sm:flex-row sm:items-center sm:justify-between sm:gap-2">
         <span
           className={`font-semibold flex items-center gap-1 ${
             isPositive ? 'text-emerald-600' : 'text-amber-600'
@@ -53,7 +53,7 @@ export const KPICard: React.FC<KPICardProps> = ({
           )}
           {delta}
         </span>
-        {subtext && <span className="text-[11px] text-gray-400">{subtext}</span>}
+        {subtext && <span className="text-[11px] leading-snug text-gray-400 sm:text-right">{subtext}</span>}
       </div>
     </div>
   );

@@ -27,55 +27,56 @@ export default function DashboardPage() {
   const { currentUser } = useAuth();
 
   return (
-    <div className="space-y-8 pb-12">
-      {/* Dashboard Top Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-gray-200">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs font-bold text-[#087F83] tracking-wider uppercase">
-              Recruitment overview
-            </span>
-            <span className="text-gray-300">•</span>
-            <span className="text-xs text-gray-500">{currentUser.organizationName}</span>
+    <div className="space-y-6 sm:space-y-8 pb-12">
+      <section className="relative overflow-hidden rounded-xl border border-[#DDE5E8] bg-white px-5 py-5 sm:px-7 sm:py-6 shadow-[0_1px_3px_rgba(15,35,45,0.04)]">
+        <div className="absolute inset-y-0 left-0 w-1 bg-[#087F83]" />
+        <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-6">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
+              <span className="text-xs font-bold text-[#087F83] tracking-wider uppercase">
+                Recruitment overview
+              </span>
+              <span className="hidden sm:inline text-gray-300">•</span>
+              <span className="text-xs text-gray-500">{currentUser.organizationName}</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#0B1926] tracking-tight leading-tight">
+              Welcome back, {currentUser.name}
+            </h1>
+            <p className="text-sm sm:text-base text-[#73818A] mt-2">
+              Active jobs, interview progress, and items that need your attention.
+            </p>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#0B1926] tracking-tight">
-            Welcome back, {currentUser.name}
-          </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
-            Active jobs, interview progress, and items that need your attention.
-          </p>
+
+          <div className="grid grid-cols-1 min-[360px]:grid-cols-2 xl:grid-cols-3 gap-2.5 xl:min-w-[460px]">
+            <Link
+              href="/app/pipeline"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#DDE5E8] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+            >
+              <Kanban className="w-3.5 h-3.5 text-[#087F83]" />
+              <span>Recruitment Pipeline</span>
+            </Link>
+
+            <Link
+              href="/app/invitations"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#DDE5E8] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+            >
+              <Send className="w-3.5 h-3.5 text-[#087F83]" />
+              <span>Invite Candidates</span>
+            </Link>
+
+            <Link
+              href="/app/jobs"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg bg-[#087F83] hover:bg-[#065E61] text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors min-[360px]:col-span-2 xl:col-span-1"
+            >
+              <Plus className="w-3.5 h-3.5 text-[#C9F36A]" />
+              <span>Create New Job</span>
+            </Link>
+          </div>
         </div>
-
-        {/* Quick Action Buttons */}
-        <div className="flex flex-wrap items-center gap-3">
-          <Link
-            href="/app/pipeline"
-            className="px-4 py-2 rounded-xl border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 text-xs font-bold flex items-center gap-2 shadow-sm transition-all"
-          >
-            <Kanban className="w-3.5 h-3.5 text-[#087F83]" />
-            <span>Recruitment Pipeline</span>
-          </Link>
-
-          <Link
-            href="/app/invitations"
-            className="px-4 py-2 rounded-xl border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 text-xs font-bold flex items-center gap-2 shadow-sm transition-all"
-          >
-            <Send className="w-3.5 h-3.5 text-[#087F83]" />
-            <span>Invite Candidates</span>
-          </Link>
-
-          <Link
-            href="/app/jobs"
-            className="px-4 py-2 rounded-xl bg-[#087F83] hover:bg-[#065E61] text-white text-xs font-bold flex items-center gap-2 shadow-md transition-all"
-          >
-            <Plus className="w-3.5 h-3.5 text-[#C9F36A]" />
-            <span>Create New Job</span>
-          </Link>
-        </div>
-      </div>
+      </section>
 
       {/* KPI Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      <div className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 sm:gap-4">
         <KPICard
           title="Active Jobs"
           value={MOCK_METRICS.activeJobs}

@@ -52,7 +52,7 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
       }`}
     >
       {/* Left: Search Bar & Quick Context */}
-      <div className="flex items-center gap-4 flex-1 max-w-lg">
+      <div className="flex items-center gap-2 sm:gap-4 flex-1 min-w-0 max-w-lg">
         <button
           type="button"
           onClick={() => setMobileOpen(true)}
@@ -61,23 +61,23 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
         >
           <Menu className="w-5 h-5" />
         </button>
-        <div className="relative w-full">
+        <div className="relative w-full min-w-0">
           <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search candidates, jobs, briefs, transcripts... (Cmd + K)"
+            placeholder="Search candidates, jobs, transcripts..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-12 py-2 rounded-xl bg-gray-50 border border-gray-200 text-xs focus:outline-none focus:border-[#087F83] focus:bg-white transition-all text-gray-900 placeholder:text-gray-400"
+            className="w-full pl-10 pr-3 sm:pr-12 py-2 rounded-lg bg-gray-50 border border-gray-200 text-xs focus:outline-none focus:border-[#087F83] focus:bg-white transition-all text-gray-900 placeholder:text-gray-400"
           />
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-semibold text-gray-400 bg-gray-200/60 px-1.5 py-0.5 rounded">
+          <span className="hidden sm:block absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-semibold text-gray-400 bg-gray-200/60 px-1.5 py-0.5 rounded">
             ⌘K
           </span>
         </div>
       </div>
 
       {/* Right: Demo Banner, Notifications & User Info */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 sm:gap-4 shrink-0">
         {/* Live Demo Banner Pill */}
         {isDemoMode && (
           <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9F36A]/20 border border-[#C9F36A]/80 text-[#0B1926] text-xs font-semibold">
@@ -110,7 +110,7 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
 
           {/* Notifications dropdown panel */}
           {notificationsOpen && (
-            <div className="absolute right-0 mt-2 w-80 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 z-50 animate-in fade-in slide-in-from-top-2">
+            <div className="absolute right-0 mt-2 w-80 max-w-[calc(100vw-2rem)] bg-white border border-gray-200 rounded-xl shadow-xl p-4 z-50 animate-in fade-in slide-in-from-top-2">
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
                 <span className="text-xs font-bold text-[#0B1926]">Notifications</span>
                 <span className="text-[10px] font-semibold text-[#087F83] cursor-pointer">
@@ -134,7 +134,9 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
 
         {/* User Role Indicator */}
         <div className="flex items-center gap-3 pl-2 border-l border-gray-200">
-          <RoleBadge role={currentRole} />
+          <div className="hidden sm:block">
+            <RoleBadge role={currentRole} />
+          </div>
           <img
             src={currentUser.avatar}
             alt={currentUser.name}

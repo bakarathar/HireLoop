@@ -2,7 +2,7 @@ import React from 'react';
 
 interface LogoProps {
   className?: string;
-  variant?: 'light' | 'dark';
+  variant?: 'light' | 'dark' | 'brand';
   size?: 'sm' | 'md' | 'lg';
   showTagline?: boolean;
 }
@@ -14,6 +14,8 @@ export const Logo: React.FC<LogoProps> = ({
   showTagline = false,
 }) => {
   const isLight = variant === 'light';
+  const brandColor = variant === 'brand' ? '#7651C8' : '#087F83';
+  const accentColor = variant === 'brand' ? '#BDA8F0' : '#C9F36A';
 
   const iconSizes = {
     sm: 'w-7 h-7',
@@ -37,28 +39,27 @@ export const Logo: React.FC<LogoProps> = ({
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-full transform transition-transform hover:scale-105 duration-300"
         >
-          {/* Outer Agent 1 Orbit: Deep Teal */}
+          {/* Outer agent orbit */}
           <circle
             cx="16"
             cy="20"
             r="12"
-            stroke="#087F83"
+            stroke={brandColor}
             strokeWidth="3.5"
             strokeLinecap="round"
             className="opacity-90"
           />
-          {/* Inner Agent 2 Orbit: Vibrant Lime */}
+          {/* Inner agent orbit */}
           <circle
             cx="24"
             cy="20"
             r="12"
-            stroke="#C9F36A"
+            stroke={accentColor}
             strokeWidth="3.5"
             strokeDasharray="18 10"
             strokeLinecap="round"
           />
-          {/* Core Intersection Pulse Dot */}
-          <circle cx="20" cy="20" r="3.5" fill="#C9F36A" />
+          <circle cx="20" cy="20" r="3.5" fill={brandColor} />
         </svg>
       </div>
 
@@ -72,7 +73,8 @@ export const Logo: React.FC<LogoProps> = ({
             Hire
           </span>
           <span
-            className={`font-black ${textSizes[size]} text-[#087F83]`}
+            className={`font-black ${textSizes[size]}`}
+            style={{ color: brandColor }}
           >
             Loop
           </span>

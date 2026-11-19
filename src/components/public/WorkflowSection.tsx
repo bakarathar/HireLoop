@@ -57,17 +57,17 @@ export const WorkflowSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#F7F9FA]">
+    <section className="py-20 sm:py-24 bg-[#FCFBFE]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="text-xs font-bold uppercase tracking-wider text-[#087F83] mb-3">
             How it works
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1926] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#211A33] tracking-tight">
             From job opening to hiring decision
           </h2>
-          <p className="mt-4 text-base text-[#73818A] leading-relaxed">
+          <p className="mt-4 text-base text-[#777184] leading-relaxed">
             A consistent workflow for recruiters, hiring managers, and candidates,
             with clear ownership at every stage.
           </p>
@@ -80,32 +80,32 @@ export const WorkflowSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl border border-gray-200/90 p-7 shadow-sm hover:shadow-xl hover:border-[#087F83]/50 transition-all flex flex-col justify-between group"
+                className="bg-white rounded-xl border border-[#E8E1F3] p-7 shadow-[0_2px_8px_rgba(53,38,83,0.04)] hover:shadow-[0_10px_28px_rgba(53,38,83,0.09)] hover:border-[#CBBBE9] transition-all flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <span className="text-xs font-bold px-2.5 py-1 rounded-md bg-[#087F83]/10 text-[#087F83]">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#F2EDFA] text-[#6945B5]">
                       {step.badge}
                     </span>
-                    <span className="text-2xl font-black text-gray-300 group-hover:text-[#C9F36A] transition-colors">
+                    <span className="text-2xl font-semibold text-[#D8D1E2] group-hover:text-[#7651C8] transition-colors">
                       {step.num}
                     </span>
                   </div>
 
-                  <div className="w-12 h-12 rounded-xl bg-[#0B1926] text-[#C9F36A] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-[#F1EBFA] text-[#7651C8] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
                     <Icon className="w-6 h-6" />
                   </div>
 
-                  <h3 className="text-lg font-bold text-[#0B1926] mb-2 group-hover:text-[#087F83] transition-colors">
+                  <h3 className="text-lg font-bold text-[#211A33] mb-2 group-hover:text-[#7651C8] transition-colors">
                     {step.title}
                   </h3>
 
-                  <p className="text-sm text-[#73818A] leading-relaxed">
+                  <p className="text-sm text-[#777184] leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
 
-                <div className="pt-5 mt-6 border-t border-gray-100 flex items-center text-xs font-semibold text-[#087F83] group-hover:text-[#0B1926] transition-colors">
+                <div className="pt-5 mt-6 border-t border-[#F0ECF5] flex items-center text-xs font-semibold text-[#7651C8] group-hover:text-[#211A33] transition-colors">
                   <span>Learn workflow mechanics</span>
                   <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -115,16 +115,16 @@ export const WorkflowSection: React.FC = () => {
         </div>
 
         {/* Core Product Rule Notice Box */}
-        <div className="mt-16 bg-[#102B35] rounded-3xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-white/10">
+        <div className="mt-16 bg-[#F1EBFA] rounded-xl p-8 text-[#211A33] flex flex-col md:flex-row items-center justify-between gap-6 border border-[#E5DCF2]">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-2xl bg-[#C9F36A] text-[#0B1926] shrink-0">
+            <div className="p-3 rounded-full bg-white text-[#7651C8] shrink-0">
               <ShieldAlert className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-white">
+              <h4 className="text-lg font-bold text-[#211A33]">
                 Core Architectural Rule: AI Recommends. Humans Decide.
               </h4>
-              <p className="text-sm text-gray-300 mt-1 max-w-2xl">
+              <p className="text-sm text-[#655D70] mt-1 max-w-2xl">
                 Candidates experience an inviting company interview with zero accounts required. All
                 evaluations, fit scores and integrity monitors remain strictly advisory. Final hiring
                 decisions rest 100% with authorized human recruiters and supervisors.
@@ -132,7 +132,7 @@ export const WorkflowSection: React.FC = () => {
             </div>
           </div>
           <div className="shrink-0">
-            <span className="px-4 py-2 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-[#C9F36A]">
+            <span className="px-4 py-2 rounded-lg bg-white border border-[#E2D9EF] text-xs font-semibold text-[#6945B5]">
               EU AI Act Compliant
             </span>
           </div>
