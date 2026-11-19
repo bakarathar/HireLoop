@@ -13,13 +13,13 @@ export default function JobsPage() {
           <h1 className="text-2xl font-extrabold text-[#0B1926] tracking-tight">
             Job Openings
           </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
+          <p className="text-xs sm:text-sm text-[#777184] mt-1">
             Manage organization job profiles, S-BERT screening parameters, and dual-agent interview configurations.
           </p>
         </div>
 
-        <button className="px-4 py-2.5 rounded-xl bg-[#087F83] hover:bg-[#065E61] text-white text-xs font-bold flex items-center gap-2 shadow-sm transition-all">
-          <Plus className="w-4 h-4 text-[#C9F36A]" />
+        <button className="px-4 py-2.5 rounded-xl bg-[#7651C8] hover:bg-[#6341AF] text-white text-xs font-bold flex items-center gap-2 shadow-sm transition-all">
+          <Plus className="w-4 h-4 text-[#BDA8F0]" />
           <span>Create New Job Profile</span>
         </button>
       </div>
@@ -28,7 +28,7 @@ export default function JobsPage() {
         {MOCK_JOBS.map((job) => (
           <div
             key={job.id}
-            className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#087F83]/40 transition-all flex flex-col justify-between"
+            className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#7651C8]/40 transition-all flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -40,7 +40,7 @@ export default function JobsPage() {
 
               <h2 className="text-base font-bold text-[#0B1926] mb-1">{job.title}</h2>
 
-              <div className="flex items-center gap-3 text-xs text-[#73818A] mb-4">
+              <div className="flex items-center gap-3 text-xs text-[#777184] mb-4">
                 <span className="flex items-center gap-1">
                   <MapPin className="w-3.5 h-3.5 text-gray-400" /> {job.location}
                 </span>
@@ -64,9 +64,9 @@ export default function JobsPage() {
 
             <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
               <span className="text-gray-500 font-medium">
-                Pass Threshold: <strong className="text-[#087F83]">{job.passThreshold}%</strong>
+                Pass Threshold: <strong className="text-[#7651C8]">{job.passThreshold}%</strong>
               </span>
-              <span className="text-xs font-bold text-[#087F83] hover:underline cursor-pointer">
+              <span className="text-xs font-bold text-[#7651C8] hover:underline cursor-pointer">
                 Manage Profile →
               </span>
             </div>

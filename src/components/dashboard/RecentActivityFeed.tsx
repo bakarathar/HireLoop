@@ -11,13 +11,13 @@ export const RecentActivityFeed: React.FC = () => {
       <div className="flex items-center justify-between pb-3 border-b border-gray-100 mb-4">
         <div>
           <h3 className="text-base font-bold text-[#0B1926] flex items-center gap-2">
-            <History className="w-4 h-4 text-[#087F83]" /> Live Recruitment Activity Feed
+            <History className="w-4 h-4 text-[#7651C8]" /> Live Recruitment Activity Feed
           </h3>
-          <p className="text-xs text-[#73818A] mt-0.5">Real-time audit log of agent and human actions</p>
+          <p className="text-xs text-[#777184] mt-0.5">Real-time audit log of agent and human actions</p>
         </div>
         <Link
           href="/app/audit"
-          className="text-xs font-semibold text-[#087F83] hover:underline"
+          className="text-xs font-semibold text-[#7651C8] hover:underline"
         >
           View Full Audit Trail →
         </Link>
@@ -29,11 +29,11 @@ export const RecentActivityFeed: React.FC = () => {
             <div
               className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5 ${
                 act.badgeType === 'ai'
-                  ? 'bg-[#087F83]/15 text-[#087F83]'
+                  ? 'bg-[#7651C8]/15 text-[#7651C8]'
                   : act.badgeType === 'human'
-                  ? 'bg-[#102B35]/15 text-[#102B35]'
+                  ? 'bg-[#352748]/15 text-[#352748]'
                   : act.badgeType === 'decision'
-                  ? 'bg-[#C9F36A]/30 text-[#0B1926]'
+                  ? 'bg-[#BDA8F0]/30 text-[#0B1926]'
                   : 'bg-gray-100 text-gray-700'
               }`}
             >

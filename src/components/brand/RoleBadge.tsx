@@ -12,20 +12,20 @@ export const RoleBadge: React.FC<RoleBadgeProps> = ({ role, size = 'md' }) => {
     ADMIN: {
       label: 'Admin',
       icon: ShieldCheck,
-      bgColor: 'bg-[#C9F36A]/15 text-[#0B1926] border-[#C9F36A]/50',
-      accentDot: 'bg-[#087F83]',
+      bgColor: 'bg-[#BDA8F0]/15 text-[#0B1926] border-[#BDA8F0]/50',
+      accentDot: 'bg-[#7651C8]',
     },
     HR_MANAGER: {
       label: 'HR Manager',
       icon: UserCheck,
-      bgColor: 'bg-[#087F83]/15 text-[#087F83] border-[#087F83]/40',
-      accentDot: 'bg-[#087F83]',
+      bgColor: 'bg-[#7651C8]/15 text-[#7651C8] border-[#7651C8]/40',
+      accentDot: 'bg-[#7651C8]',
     },
     SUPERVISOR: {
       label: 'Technical Supervisor',
       icon: Code,
-      bgColor: 'bg-[#102B35]/15 text-[#102B35] border-[#102B35]/40',
-      accentDot: 'bg-[#102B35]',
+      bgColor: 'bg-[#352748]/15 text-[#352748] border-[#352748]/40',
+      accentDot: 'bg-[#352748]',
     },
   };
 

@@ -12,13 +12,13 @@ export const RecruitmentFunnel: React.FC = () => {
       <div className="flex items-center justify-between mb-6 pb-3 border-b border-gray-100">
         <div>
           <h3 className="text-base font-bold text-[#0B1926] flex items-center gap-2">
-            <Filter className="w-4 h-4 text-[#087F83]" /> Recruitment Pipeline Funnel
+            <Filter className="w-4 h-4 text-[#7651C8]" /> Recruitment Pipeline Funnel
           </h3>
-          <p className="text-xs text-[#73818A] mt-0.5">
+          <p className="text-xs text-[#777184] mt-0.5">
             Stage conversion rates from application to final offer extension
           </p>
         </div>
-        <span className="text-xs px-2.5 py-1 rounded-full bg-[#087F83]/10 text-[#087F83] font-semibold">
+        <span className="text-xs px-2.5 py-1 rounded-full bg-[#7651C8]/10 text-[#7651C8] font-semibold">
           Active Pipeline: 842 Candidates
         </span>
       </div>
@@ -67,11 +67,11 @@ export const RecruitmentFunnel: React.FC = () => {
         </div>
         <div>
           <div className="text-xs text-gray-400">Agent 1 Pass Rate</div>
-          <div className="text-sm font-black text-[#087F83] mt-0.5">53.0%</div>
+          <div className="text-sm font-black text-[#7651C8] mt-0.5">53.0%</div>
         </div>
         <div>
           <div className="text-xs text-gray-400">Agent 2 Pass Rate</div>
-          <div className="text-sm font-black text-[#087F83] mt-0.5">71.1%</div>
+          <div className="text-sm font-black text-[#7651C8] mt-0.5">71.1%</div>
         </div>
       </div>
     </div>

@@ -3,30 +3,30 @@
 @layer base {
   :root {
     --brand-navy: #0B1926;
-    --brand-deep-teal: #102B35;
-    --brand-teal: #087F83;
-    --brand-teal-light: #0ea5b5;
-    --brand-lime: #C9F36A;
-    --brand-lime-hover: #b4df4d;
-    --brand-bg: #F7F9FA;
-    --brand-text: #172B35;
-    --brand-secondary: #73818A;
-    --brand-border: #E2E8F0;
+    --brand-deep-purple: #352748;
+    --brand-purple: #7651C8;
+    --brand-purple-light: #9470D5;
+    --brand-lavender: #BDA8F0;
+    --brand-lavender-hover: #AA91E8;
+    --brand-bg: #F5F1FB;
+    --brand-text: #312A41;
+    --brand-secondary: #777184;
+    --brand-border: #E8E1F3;
   }
 }
 
 /* Custom theme colors */
 @theme {
   --color-navy: #0B1926;
-  --color-deep-teal: #102B35;
-  --color-teal-brand: #087F83;
-  --color-teal-light: #0ea5b5;
-  --color-lime-brand: #C9F36A;
-  --color-lime-hover: #b4df4d;
-  --color-app-bg: #F7F9FA;
-  --color-app-text: #172B35;
-  --color-app-secondary: #73818A;
-  --color-app-border: #E2E8F0;
+  --color-deep-purple: #352748;
+  --color-purple-brand: #7651C8;
+  --color-purple-light: #9470D5;
+  --color-lavender-brand: #BDA8F0;
+  --color-lavender-hover: #AA91E8;
+  --color-app-bg: #F5F1FB;
+  --color-app-text: #312A41;
+  --color-app-secondary: #777184;
+  --color-app-border: #E8E1F3;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 
 /* Subtle glow and glass styles */
 .glass-dark {
-  background: rgba(16, 43, 53, 0.75);
+  background: rgba(53, 39, 72, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -52,11 +52,11 @@ body {
 }
 
 .lime-glow {
-  box-shadow: 0 0 25px rgba(201, 243, 106, 0.35);
+  box-shadow: 0 0 25px rgba(189, 168, 240, 0.35);
 }
 
 .teal-glow {
-  box-shadow: 0 0 30px rgba(8, 127, 131, 0.25);
+  box-shadow: 0 0 30px rgba(118, 81, 200, 0.25);
 }
 
 /* Custom scrollbars */

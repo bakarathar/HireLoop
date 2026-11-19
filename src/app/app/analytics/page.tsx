@@ -12,7 +12,7 @@ export default function AnalyticsPage() {
           <h1 className="text-2xl font-extrabold text-[#0B1926] tracking-tight">
             Recruitment Intelligence & Analytics
           </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
+          <p className="text-xs sm:text-sm text-[#777184] mt-1">
             Aggregate conversion analytics, time-to-hire acceleration metrics, and dual-agent interview pass rate breakdowns.
           </p>
         </div>
@@ -27,13 +27,13 @@ export default function AnalyticsPage() {
 
         <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
           <div className="text-xs font-semibold text-gray-500 uppercase">Offer Acceptance Rate</div>
-          <div className="text-3xl font-black text-[#087F83] mt-2">91.2%</div>
+          <div className="text-3xl font-black text-[#7651C8] mt-2">91.2%</div>
           <p className="text-xs text-gray-500 mt-2 font-medium">Highest candidate satisfaction index</p>
         </div>
 
         <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
           <div className="text-xs font-semibold text-gray-500 uppercase">AI Advisory Agreement</div>
-          <div className="text-3xl font-black text-[#102B35] mt-2">94.6%</div>
+          <div className="text-3xl font-black text-[#352748] mt-2">94.6%</div>
           <p className="text-xs text-gray-500 mt-2 font-medium">Correlation with human senior rater scores</p>
         </div>
       </div>

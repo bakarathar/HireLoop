@@ -28,12 +28,12 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-6 sm:space-y-8 pb-12">
-      <section className="relative overflow-hidden rounded-xl border border-[#DDE5E8] bg-white px-5 py-5 sm:px-7 sm:py-6 shadow-[0_1px_3px_rgba(15,35,45,0.04)]">
-        <div className="absolute inset-y-0 left-0 w-1 bg-[#087F83]" />
+      <section className="relative overflow-hidden rounded-xl border border-[#E8E1F3] bg-white px-5 py-5 sm:px-7 sm:py-6 shadow-[0_1px_3px_rgba(15,35,45,0.04)]">
+        <div className="absolute inset-y-0 left-0 w-1 bg-[#7651C8]" />
         <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-6">
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2">
-              <span className="text-xs font-bold text-[#087F83] tracking-wider uppercase">
+              <span className="text-xs font-bold text-[#7651C8] tracking-wider uppercase">
                 Recruitment overview
               </span>
               <span className="hidden sm:inline text-gray-300">•</span>
@@ -42,7 +42,7 @@ export default function DashboardPage() {
             <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#0B1926] tracking-tight leading-tight">
               Welcome back, {currentUser.name}
             </h1>
-            <p className="text-sm sm:text-base text-[#73818A] mt-2">
+            <p className="text-sm sm:text-base text-[#777184] mt-2">
               Active jobs, interview progress, and items that need your attention.
             </p>
           </div>
@@ -50,25 +50,25 @@ export default function DashboardPage() {
           <div className="grid grid-cols-1 min-[360px]:grid-cols-2 xl:grid-cols-3 gap-2.5 xl:min-w-[460px]">
             <Link
               href="/app/pipeline"
-              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#DDE5E8] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#E8E1F3] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
             >
-              <Kanban className="w-3.5 h-3.5 text-[#087F83]" />
+              <Kanban className="w-3.5 h-3.5 text-[#7651C8]" />
               <span>Recruitment Pipeline</span>
             </Link>
 
             <Link
               href="/app/invitations"
-              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#DDE5E8] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg border border-[#E8E1F3] bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
             >
-              <Send className="w-3.5 h-3.5 text-[#087F83]" />
+              <Send className="w-3.5 h-3.5 text-[#7651C8]" />
               <span>Invite Candidates</span>
             </Link>
 
             <Link
               href="/app/jobs"
-              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg bg-[#087F83] hover:bg-[#065E61] text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors min-[360px]:col-span-2 xl:col-span-1"
+              className="min-h-11 px-3 sm:px-4 py-2 rounded-lg bg-[#7651C8] hover:bg-[#6341AF] text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-colors min-[360px]:col-span-2 xl:col-span-1"
             >
-              <Plus className="w-3.5 h-3.5 text-[#C9F36A]" />
+              <Plus className="w-3.5 h-3.5 text-[#BDA8F0]" />
               <span>Create New Job</span>
             </Link>
           </div>
@@ -82,7 +82,7 @@ export default function DashboardPage() {
           value={MOCK_METRICS.activeJobs}
           delta={MOCK_METRICS.activeJobsDelta}
           icon={Briefcase}
-          accentColor="#087F83"
+          accentColor="#7651C8"
           subtext="8 engineering, 4 other"
         />
 
@@ -100,7 +100,7 @@ export default function DashboardPage() {
           value={MOCK_METRICS.invitationsSent}
           delta={MOCK_METRICS.invitationsSentDelta}
           icon={MailCheck}
-          accentColor="#8B5CF6"
+          accentColor="#7651C8"
           subtext="Zero password friction"
         />
 
@@ -109,7 +109,7 @@ export default function DashboardPage() {
           value={MOCK_METRICS.round1Completed}
           delta={MOCK_METRICS.round1CompletedDelta}
           icon={PhoneCall}
-          accentColor="#102B35"
+          accentColor="#352748"
           subtext="Agent 1 behavioral"
         />
 
@@ -118,7 +118,7 @@ export default function DashboardPage() {
           value={MOCK_METRICS.round2Completed}
           delta={MOCK_METRICS.round2CompletedDelta}
           icon={Code2}
-          accentColor="#14B8A6"
+          accentColor="#9470D5"
           subtext="Agent 2 Monaco live"
         />
 

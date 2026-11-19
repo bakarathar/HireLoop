@@ -17,14 +17,14 @@ export const KPICard: React.FC<KPICardProps> = ({
   delta,
   isPositive = true,
   icon: Icon,
-  accentColor = '#087F83',
+  accentColor = '#7651C8',
   subtext,
 }) => {
   return (
-    <div className="bg-white rounded-lg border border-[#DDE5E8] p-5 shadow-[0_1px_2px_rgba(15,35,45,0.04)] hover:border-[#B9C7CB] transition-colors flex flex-col justify-between group">
+    <div className="bg-white rounded-lg border border-[#E8E1F3] p-5 shadow-[0_1px_2px_rgba(15,35,45,0.04)] hover:border-[#C2B2DF] transition-colors flex flex-col justify-between group">
       <div className="flex items-start justify-between">
         <div>
-          <span className="text-xs font-semibold text-[#73818A] tracking-wider uppercase">
+          <span className="text-xs font-semibold text-[#777184] tracking-wider uppercase">
             {title}
           </span>
           <div className="text-2xl sm:text-3xl font-black text-[#0B1926] mt-1 tracking-tight">

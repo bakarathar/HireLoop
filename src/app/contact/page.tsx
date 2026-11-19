@@ -14,7 +14,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F7F9FA]">
+    <div className="min-h-screen flex flex-col bg-[#F5F1FB]">
       <PublicNavbar />
 
       <main className="flex-1 py-16">
@@ -23,13 +23,13 @@ export default function ContactPage() {
             {/* Contact info column */}
             <div className="lg:col-span-5 space-y-8">
               <div>
-                <span className="px-3.5 py-1.5 rounded-full bg-[#087F83]/10 text-[#087F83] text-xs font-bold uppercase tracking-wider">
+                <span className="px-3.5 py-1.5 rounded-full bg-[#7651C8]/10 text-[#7651C8] text-xs font-bold uppercase tracking-wider">
                   Get in Touch
                 </span>
                 <h1 className="text-4xl font-extrabold text-[#0B1926] mt-4 tracking-tight">
                   Request a Private Enterprise Walkthrough
                 </h1>
-                <p className="mt-3 text-base text-[#73818A] leading-relaxed">
+                <p className="mt-3 text-base text-[#777184] leading-relaxed">
                   Connect with our talent engineering architects to see how HireLoop can be deployed
                   within your hiring infrastructure.
                 </p>
@@ -37,7 +37,7 @@ export default function ContactPage() {
 
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-gray-200">
-                  <div className="w-10 h-10 rounded-xl bg-[#087F83]/15 text-[#087F83] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#7651C8]/15 text-[#7651C8] flex items-center justify-center">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-gray-200">
-                  <div className="w-10 h-10 rounded-xl bg-[#087F83]/15 text-[#087F83] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#7651C8]/15 text-[#7651C8] flex items-center justify-center">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-gray-200">
-                  <div className="w-10 h-10 rounded-xl bg-[#087F83]/15 text-[#087F83] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#7651C8]/15 text-[#7651C8] flex items-center justify-center">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -72,8 +72,8 @@ export default function ContactPage() {
             <div className="lg:col-span-7 bg-white rounded-3xl border border-gray-200 p-8 sm:p-10 shadow-sm">
               {submitted ? (
                 <div className="text-center py-12 space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-[#C9F36A]/30 text-[#087F83] mx-auto flex items-center justify-center">
-                    <CheckCircle2 className="w-10 h-10 text-[#087F83]" />
+                  <div className="w-16 h-16 rounded-full bg-[#BDA8F0]/30 text-[#7651C8] mx-auto flex items-center justify-center">
+                    <CheckCircle2 className="w-10 h-10 text-[#7651C8]" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0B1926]">Demo Request Received</h3>
                   <p className="text-sm text-gray-600 max-w-md mx-auto">
@@ -99,7 +99,7 @@ export default function ContactPage() {
                         type="text"
                         required
                         placeholder="e.g. Marcus Vance"
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#087F83]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#7651C8]"
                       />
                     </div>
                     <div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                         type="email"
                         required
                         placeholder="marcus@company.com"
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#087F83]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#7651C8]"
                       />
                     </div>
                   </div>
@@ -124,14 +124,14 @@ export default function ContactPage() {
                         type="text"
                         required
                         placeholder="Acme Global Inc."
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#087F83]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#7651C8]"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-semibold text-gray-700 mb-1.5">
                         Estimated Annual Hires
                       </label>
-                      <select className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#087F83] bg-white">
+                      <select className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#7651C8] bg-white">
                         <option>50 – 200 hires</option>
                         <option>201 – 1,000 hires</option>
                         <option>1,000+ enterprise hires</option>
@@ -146,13 +146,13 @@ export default function ContactPage() {
                     <textarea
                       rows={4}
                       placeholder="Tell us about your current interview pipeline, engineering challenges, or compliance needs..."
-                      className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#087F83]"
+                      className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#7651C8]"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 rounded-xl bg-[#087F83] hover:bg-[#065E61] text-white text-sm font-bold shadow-lg transition-all flex items-center justify-center gap-2"
+                    className="w-full py-3.5 rounded-xl bg-[#7651C8] hover:bg-[#6341AF] text-white text-sm font-bold shadow-lg transition-all flex items-center justify-center gap-2"
                   >
                     <span>Submit Request</span>
                     <Send className="w-4 h-4" />

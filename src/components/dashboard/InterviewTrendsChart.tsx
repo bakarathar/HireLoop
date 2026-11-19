@@ -20,18 +20,18 @@ export const InterviewTrendsChart: React.FC = () => {
       <div className="flex items-center justify-between mb-6 pb-3 border-b border-gray-100">
         <div>
           <h3 className="text-base font-bold text-[#0B1926] flex items-center gap-2">
-            <BarChart3 className="w-4 h-4 text-[#087F83]" /> Weekly Interview Outcomes
+            <BarChart3 className="w-4 h-4 text-[#7651C8]" /> Weekly Interview Outcomes
           </h3>
-          <p className="text-xs text-[#73818A] mt-0.5">
+          <p className="text-xs text-[#777184] mt-0.5">
             Agent 1 (Behavioral) vs Agent 2 (Technical) passing candidates
           </p>
         </div>
         <div className="flex items-center gap-4 text-xs font-semibold">
-          <span className="flex items-center gap-1.5 text-[#087F83]">
-            <span className="w-2.5 h-2.5 rounded-sm bg-[#087F83]" /> Agent 1 Passed
+          <span className="flex items-center gap-1.5 text-[#7651C8]">
+            <span className="w-2.5 h-2.5 rounded-sm bg-[#7651C8]" /> Agent 1 Passed
           </span>
-          <span className="flex items-center gap-1.5 text-[#102B35]">
-            <span className="w-2.5 h-2.5 rounded-sm bg-[#102B35]" /> Agent 2 Passed
+          <span className="flex items-center gap-1.5 text-[#352748]">
+            <span className="w-2.5 h-2.5 rounded-sm bg-[#352748]" /> Agent 2 Passed
           </span>
         </div>
       </div>
@@ -51,8 +51,8 @@ export const InterviewTrendsChart: React.FC = () => {
                 fontSize: '12px',
               }}
             />
-            <Bar dataKey="agent1Pass" name="Agent 1 Passed" fill="#087F83" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="agent2Pass" name="Agent 2 Passed" fill="#102B35" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="agent1Pass" name="Agent 1 Passed" fill="#7651C8" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="agent2Pass" name="Agent 2 Passed" fill="#352748" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

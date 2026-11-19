@@ -68,7 +68,7 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
             placeholder="Search candidates, jobs, transcripts..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-3 sm:pr-12 py-2 rounded-lg bg-gray-50 border border-gray-200 text-xs focus:outline-none focus:border-[#087F83] focus:bg-white transition-all text-gray-900 placeholder:text-gray-400"
+            className="w-full pl-10 pr-3 sm:pr-12 py-2 rounded-lg bg-gray-50 border border-gray-200 text-xs focus:outline-none focus:border-[#7651C8] focus:bg-white transition-all text-gray-900 placeholder:text-gray-400"
           />
           <span className="hidden sm:block absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-semibold text-gray-400 bg-gray-200/60 px-1.5 py-0.5 rounded">
             ⌘K
@@ -80,8 +80,8 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
       <div className="flex items-center gap-2 sm:gap-4 shrink-0">
         {/* Live Demo Banner Pill */}
         {isDemoMode && (
-          <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9F36A]/20 border border-[#C9F36A]/80 text-[#0B1926] text-xs font-semibold">
-            <span className="w-2 h-2 rounded-full bg-[#087F83] animate-pulse" />
+          <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-[#BDA8F0]/20 border border-[#BDA8F0]/80 text-[#0B1926] text-xs font-semibold">
+            <span className="w-2 h-2 rounded-full bg-[#7651C8] animate-pulse" />
             <span className="font-bold">Live Demonstration Environment</span>
           </div>
         )}
@@ -90,7 +90,7 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
         <div className="hidden md:flex items-center gap-2">
           <Link
             href="/app/jobs"
-            className="px-3.5 py-1.5 rounded-xl bg-[#087F83] hover:bg-[#065E61] text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all"
+            className="px-3.5 py-1.5 rounded-xl bg-[#7651C8] hover:bg-[#6341AF] text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Post Job</span>
@@ -101,11 +101,11 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
         <div className="relative">
           <button
             onClick={() => setNotificationsOpen(!notificationsOpen)}
-            className="p-2 rounded-xl text-gray-600 hover:text-[#087F83] hover:bg-gray-100 transition-colors relative"
+            className="p-2 rounded-xl text-gray-600 hover:text-[#7651C8] hover:bg-gray-100 transition-colors relative"
             aria-label="View notifications"
           >
             <Bell className="w-4 h-4" />
-            <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-[#C9F36A] ring-2 ring-white rounded-full"></span>
+            <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-[#BDA8F0] ring-2 ring-white rounded-full"></span>
           </button>
 
           {/* Notifications dropdown panel */}
@@ -113,7 +113,7 @@ export const DashboardHeader: React.FC<HeaderProps> = ({ collapsed, setMobileOpe
             <div className="absolute right-0 mt-2 w-80 max-w-[calc(100vw-2rem)] bg-white border border-gray-200 rounded-xl shadow-xl p-4 z-50 animate-in fade-in slide-in-from-top-2">
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
                 <span className="text-xs font-bold text-[#0B1926]">Notifications</span>
-                <span className="text-[10px] font-semibold text-[#087F83] cursor-pointer">
+                <span className="text-[10px] font-semibold text-[#7651C8] cursor-pointer">
                   Mark all read
                 </span>
               </div>

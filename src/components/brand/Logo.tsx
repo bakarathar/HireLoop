@@ -14,8 +14,8 @@ export const Logo: React.FC<LogoProps> = ({
   showTagline = false,
 }) => {
   const isLight = variant === 'light';
-  const brandColor = variant === 'brand' ? '#7651C8' : '#087F83';
-  const accentColor = variant === 'brand' ? '#BDA8F0' : '#C9F36A';
+  const brandColor = '#7651C8';
+  const accentColor = '#BDA8F0';
 
   const iconSizes = {
     sm: 'w-7 h-7',
@@ -82,7 +82,7 @@ export const Logo: React.FC<LogoProps> = ({
         {showTagline && (
           <span
             className={`text-[10px] uppercase font-semibold tracking-widest ${
-              isLight ? 'text-gray-300' : 'text-[#73818A]'
+              isLight ? 'text-gray-300' : 'text-[#777184]'
             }`}
           >
             Smarter Interviews • Better Hiring Decisions

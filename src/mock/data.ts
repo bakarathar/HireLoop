@@ -418,12 +418,12 @@ export const MOCK_PENDING_ACTIONS: PendingHRAction[] = [
 
 export const RECRUITMENT_FUNNEL_DATA = [
   { stage: 'Applied', candidates: 842, fill: '#0B1926' },
-  { stage: 'Resume Fit (S-BERT)', candidates: 412, fill: '#102B35' },
-  { stage: 'Agent 1 Behavioral', candidates: 196, fill: '#087F83' },
+  { stage: 'Resume Fit (S-BERT)', candidates: 412, fill: '#352748' },
+  { stage: 'Agent 1 Behavioral', candidates: 196, fill: '#7651C8' },
   { stage: 'Round 2 Scheduled', candidates: 104, fill: '#0EA5E9' },
-  { stage: 'Agent 2 Technical', candidates: 74, fill: '#14B8A6' },
+  { stage: 'Agent 2 Technical', candidates: 74, fill: '#9470D5' },
   { stage: 'Final Human Review', candidates: 24, fill: '#84CC16' },
-  { stage: 'Offer Extended', candidates: 14, fill: '#C9F36A' },
+  { stage: 'Offer Extended', candidates: 14, fill: '#BDA8F0' },
 ];
 
 export const WEEKLY_TREND_DATA = [
@@ -434,8 +434,8 @@ export const WEEKLY_TREND_DATA = [
 ];
 
 export const DEPARTMENT_DISTRIBUTION = [
-  { name: 'Core Infrastructure', value: 34, color: '#087F83' },
+  { name: 'Core Infrastructure', value: 34, color: '#7651C8' },
   { name: 'Web Platform', value: 26, color: '#0EA5E9' },
-  { name: 'Machine Intelligence', value: 22, color: '#C9F36A' },
-  { name: 'Security & DevOps', value: 18, color: '#102B35' },
+  { name: 'Machine Intelligence', value: 22, color: '#BDA8F0' },
+  { name: 'Security & DevOps', value: 18, color: '#352748' },
 ];

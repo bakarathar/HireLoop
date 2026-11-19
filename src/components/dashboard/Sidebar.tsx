@@ -100,7 +100,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
           </Link>
         ) : (
           <Link href="/app/dashboard" className="mx-auto">
-            <div className="w-9 h-9 rounded-xl bg-[#087F83] text-[#C9F36A] font-black flex items-center justify-center text-sm">
+            <div className="w-9 h-9 rounded-xl bg-[#7651C8] text-[#BDA8F0] font-black flex items-center justify-center text-sm">
               HL
             </div>
           </Link>
@@ -121,16 +121,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
 
       {/* Organization Header Pill */}
       {!collapsed && (
-        <div className="px-4 py-2.5 mx-3 mt-3 rounded-xl bg-[#102B35] border border-white/10 flex items-center justify-between">
+        <div className="px-4 py-2.5 mx-3 mt-3 rounded-xl bg-[#352748] border border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-2 overflow-hidden">
-            <div className="w-6 h-6 rounded-md bg-[#087F83]/30 text-[#C9F36A] flex items-center justify-center shrink-0">
+            <div className="w-6 h-6 rounded-md bg-[#7651C8]/30 text-[#BDA8F0] flex items-center justify-center shrink-0">
               <Building2 className="w-3.5 h-3.5" />
             </div>
             <span className="text-xs font-semibold text-gray-200 truncate">
               {currentUser.organizationName}
             </span>
           </div>
-          <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#C9F36A]/20 text-[#C9F36A] font-bold">
+          <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#BDA8F0]/20 text-[#BDA8F0] font-bold">
             PRO
           </span>
         </div>
@@ -141,7 +141,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
         {navSections.map((section, idx) => (
           <div key={idx} className="space-y-1">
             {!collapsed && (
-              <div className="px-3 text-[10px] font-extrabold uppercase tracking-widest text-[#73818A] mb-2">
+              <div className="px-3 text-[10px] font-extrabold uppercase tracking-widest text-[#777184] mb-2">
                 {section.title}
               </div>
             )}
@@ -156,7 +156,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
                   onClick={() => setMobileOpen(false)}
                   className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all group ${
                     isActive
-                      ? 'bg-[#087F83] text-white shadow-lg shadow-[#087F83]/30'
+                      ? 'bg-[#7651C8] text-white shadow-lg shadow-[#7651C8]/30'
                       : 'text-gray-300 hover:bg-white/5 hover:text-white'
                   } ${collapsed ? 'justify-center px-0' : ''}`}
                   title={collapsed ? item.label : undefined}
@@ -164,7 +164,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
                   <Icon
                     className={`w-4 h-4 shrink-0 transition-colors ${
                       isActive
-                        ? 'text-[#C9F36A]'
+                        ? 'text-[#BDA8F0]'
                         : 'text-gray-400 group-hover:text-white'
                     }`}
                   />
@@ -175,7 +175,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
                         <span
                           className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
                             isActive
-                              ? 'bg-white/20 text-[#C9F36A]'
+                              ? 'bg-white/20 text-[#BDA8F0]'
                               : 'bg-white/10 text-gray-300'
                           }`}
                         >
@@ -200,7 +200,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
               <img
                 src={currentUser.avatar}
                 alt={currentUser.name}
-                className="w-9 h-9 rounded-full object-cover ring-2 ring-[#087F83]"
+                className="w-9 h-9 rounded-full object-cover ring-2 ring-[#7651C8]"
               />
               <div className="flex-1 min-w-0">
                 <div className="text-xs font-bold text-white truncate">
@@ -214,15 +214,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
 
             {/* Quick Role Switcher Pill Bar */}
             <div className="flex items-center justify-between pt-1">
-              <span className="text-[10px] font-bold uppercase text-[#73818A] flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-[#C9F36A]" /> Demo Role
+              <span className="text-[10px] font-bold uppercase text-[#777184] flex items-center gap-1">
+                <Sparkles className="w-3 h-3 text-[#BDA8F0]" /> Demo Role
               </span>
               <div className="flex items-center gap-1">
                 <button
                   onClick={() => switchRole('ADMIN')}
                   className={`text-[10px] px-2 py-0.5 rounded-md font-bold transition-all ${
                     currentRole === 'ADMIN'
-                      ? 'bg-[#C9F36A] text-[#0B1926]'
+                      ? 'bg-[#BDA8F0] text-[#0B1926]'
                       : 'bg-white/10 text-gray-400 hover:text-white'
                   }`}
                   title="Switch to Admin"
@@ -233,7 +233,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
                   onClick={() => switchRole('HR_MANAGER')}
                   className={`text-[10px] px-2 py-0.5 rounded-md font-bold transition-all ${
                     currentRole === 'HR_MANAGER'
-                      ? 'bg-[#087F83] text-white'
+                      ? 'bg-[#7651C8] text-white'
                       : 'bg-white/10 text-gray-400 hover:text-white'
                   }`}
                   title="Switch to HR Manager"
@@ -244,7 +244,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
                   onClick={() => switchRole('SUPERVISOR')}
                   className={`text-[10px] px-2 py-0.5 rounded-md font-bold transition-all ${
                     currentRole === 'SUPERVISOR'
-                      ? 'bg-[#087F83] text-white'
+                      ? 'bg-[#7651C8] text-white'
                       : 'bg-white/10 text-gray-400 hover:text-white'
                   }`}
                   title="Switch to Supervisor"
@@ -268,7 +268,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed, mobil
             <img
               src={currentUser.avatar}
               alt={currentUser.name}
-              className="w-8 h-8 rounded-full object-cover ring-2 ring-[#087F83]"
+              className="w-8 h-8 rounded-full object-cover ring-2 ring-[#7651C8]"
             />
             <Link
               href="/login"

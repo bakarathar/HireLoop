@@ -11,14 +11,14 @@ export default function RoundTwoPage() {
           <h1 className="text-2xl font-extrabold text-[#0B1926] tracking-tight">
             Round 2 — Technical Assessments & Live Coding
           </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
+          <p className="text-xs sm:text-sm text-[#777184] mt-1">
             Agent 2 adaptive technical questioning, in-browser Monaco Editor environment, and sandboxed execution telemetry.
           </p>
         </div>
       </div>
 
       <div className="bg-white rounded-2xl border border-gray-200 p-8 text-center space-y-3">
-        <div className="w-12 h-12 rounded-2xl bg-[#0B1926] text-[#C9F36A] mx-auto flex items-center justify-center">
+        <div className="w-12 h-12 rounded-2xl bg-[#0B1926] text-[#BDA8F0] mx-auto flex items-center justify-center">
           <Code2 className="w-6 h-6" />
         </div>
         <h3 className="text-lg font-bold text-[#0B1926]">Agent 2 Technical Arena</h3>

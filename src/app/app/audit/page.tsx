@@ -12,7 +12,7 @@ export default function AuditPage() {
           <h1 className="text-2xl font-extrabold text-[#0B1926] tracking-tight">
             Immutable Audit Trail
           </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
+          <p className="text-xs sm:text-sm text-[#777184] mt-1">
             Tamper-proof record of every AI agent score, human override reason, calendar action, and final hiring outcome.
           </p>
         </div>

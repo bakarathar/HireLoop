@@ -11,9 +11,9 @@ export const DepartmentChart: React.FC = () => {
       <div className="flex items-center justify-between pb-3 border-b border-gray-100">
         <div>
           <h3 className="text-base font-bold text-[#0B1926] flex items-center gap-2">
-            <PieIcon className="w-4 h-4 text-[#087F83]" /> Candidate Distribution
+            <PieIcon className="w-4 h-4 text-[#7651C8]" /> Candidate Distribution
           </h3>
-          <p className="text-xs text-[#73818A] mt-0.5">By functional department</p>
+          <p className="text-xs text-[#777184] mt-0.5">By functional department</p>
         </div>
       </div>
 

@@ -13,7 +13,7 @@ export default function CandidatesPage() {
           <h1 className="text-2xl font-extrabold text-[#0B1926] tracking-tight">
             All Candidates Directory
           </h1>
-          <p className="text-xs sm:text-sm text-[#73818A] mt-1">
+          <p className="text-xs sm:text-sm text-[#777184] mt-1">
             Review parsed resume categories, Sentence-BERT advisory fit scores, interview progress, and evaluations.
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function CandidatesPage() {
             <input
               type="text"
               placeholder="Search candidate..."
-              className="pl-9 pr-4 py-2 rounded-xl border border-gray-200 text-xs bg-white focus:outline-none focus:border-[#087F83]"
+              className="pl-9 pr-4 py-2 rounded-xl border border-gray-200 text-xs bg-white focus:outline-none focus:border-[#7651C8]"
             />
           </div>
           <button className="px-3.5 py-2 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-xs font-semibold flex items-center gap-1.5 text-gray-700">
@@ -70,7 +70,7 @@ export default function CandidatesPage() {
                   </td>
 
                   <td className="py-4 px-4 text-center">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#087F83]/10 text-[#087F83] font-bold text-xs">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#7651C8]/10 text-[#7651C8] font-bold text-xs">
                       {cand.resumeFitScore}% Fit
                     </span>
                   </td>
@@ -92,7 +92,7 @@ export default function CandidatesPage() {
                   </td>
 
                   <td className="py-4 px-4 text-right">
-                    <button className="px-3 py-1.5 rounded-lg bg-[#0B1926] hover:bg-[#102B35] text-white text-[11px] font-bold transition-colors">
+                    <button className="px-3 py-1.5 rounded-lg bg-[#0B1926] hover:bg-[#352748] text-white text-[11px] font-bold transition-colors">
                       View Profile
                     </button>
                   </td>

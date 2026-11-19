@@ -61,7 +61,7 @@ export const WorkflowSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-bold uppercase tracking-wider text-[#087F83] mb-3">
+          <div className="text-xs font-bold uppercase tracking-wider text-[#7651C8] mb-3">
             How it works
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#211A33] tracking-tight">

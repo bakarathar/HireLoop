@@ -9,7 +9,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#F7F9FA] text-[#172B35]">
+    <div className="min-h-screen bg-[#F5F1FB] text-[#312A41]">
       {/* Sidebar Navigation */}
       <Sidebar
         collapsed={collapsed}

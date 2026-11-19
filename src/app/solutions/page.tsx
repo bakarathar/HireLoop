@@ -32,19 +32,19 @@ export default function SolutionsPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F7F9FA]">
+    <div className="min-h-screen flex flex-col bg-[#F5F1FB]">
       <PublicNavbar />
 
       <main className="flex-1 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="px-3.5 py-1.5 rounded-full bg-[#087F83]/10 text-[#087F83] text-xs font-bold uppercase tracking-wider">
+            <span className="px-3.5 py-1.5 rounded-full bg-[#7651C8]/10 text-[#7651C8] text-xs font-bold uppercase tracking-wider">
               Tailored Workflows
             </span>
             <h1 className="text-4xl font-extrabold text-[#0B1926] mt-4 tracking-tight">
               Recruitment Solutions by Industry
             </h1>
-            <p className="mt-3 text-base text-[#73818A]">
+            <p className="mt-3 text-base text-[#777184]">
               Engineered to meet the specific throughput, security, and technical rigor of leading hiring organizations.
             </p>
           </div>
@@ -58,16 +58,16 @@ export default function SolutionsPage() {
                   className="bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-2xl bg-[#102B35] text-[#C9F36A] flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-[#352748] text-[#BDA8F0] flex items-center justify-center mb-6">
                       <Icon className="w-6 h-6" />
                     </div>
                     <h2 className="text-xl font-bold text-[#0B1926] mb-3">{sol.title}</h2>
-                    <p className="text-sm text-[#73818A] leading-relaxed mb-6">{sol.desc}</p>
+                    <p className="text-sm text-[#777184] leading-relaxed mb-6">{sol.desc}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {sol.tags.map((tag, tIdx) => (
                         <span
                           key={tIdx}
-                          className="px-2.5 py-1 rounded-md bg-[#F7F9FA] border border-gray-200 text-xs font-semibold text-gray-700"
+                          className="px-2.5 py-1 rounded-md bg-[#F5F1FB] border border-gray-200 text-xs font-semibold text-gray-700"
                         >
                           {tag}
                         </span>
@@ -77,7 +77,7 @@ export default function SolutionsPage() {
 
                   <Link
                     href="/login"
-                    className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#087F83] hover:text-[#0B1926] transition-colors"
+                    className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#7651C8] hover:text-[#0B1926] transition-colors"
                   >
                     <span>View Demo Environment</span>
                     <ArrowRight className="w-4 h-4" />

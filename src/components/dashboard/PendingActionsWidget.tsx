@@ -14,7 +14,7 @@ export const PendingActionsWidget: React.FC = () => {
             <h3 className="text-base font-bold text-[#0B1926] flex items-center gap-2">
               <AlertCircle className="w-4 h-4 text-amber-500" /> Pending HR Actions
             </h3>
-            <p className="text-xs text-[#73818A] mt-0.5">Tasks requiring human reviewer authorization</p>
+            <p className="text-xs text-[#777184] mt-0.5">Tasks requiring human reviewer authorization</p>
           </div>
           <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 font-bold border border-amber-200">
             3 High Priority
@@ -25,7 +25,7 @@ export const PendingActionsWidget: React.FC = () => {
           {MOCK_PENDING_ACTIONS.map((item) => (
             <div
               key={item.id}
-              className="p-3.5 rounded-xl border border-gray-200/80 hover:border-[#087F83] bg-amber-50/20 transition-all flex flex-col gap-2 group"
+              className="p-3.5 rounded-xl border border-gray-200/80 hover:border-[#7651C8] bg-amber-50/20 transition-all flex flex-col gap-2 group"
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-[#0B1926]">{item.title}</span>
@@ -43,10 +43,10 @@ export const PendingActionsWidget: React.FC = () => {
               <div className="flex items-center justify-end gap-2 pt-1">
                 <Link
                   href="/app/briefs"
-                  className="px-3 py-1 rounded-lg bg-[#0B1926] hover:bg-[#102B35] text-white text-[11px] font-bold flex items-center gap-1 transition-colors"
+                  className="px-3 py-1 rounded-lg bg-[#0B1926] hover:bg-[#352748] text-white text-[11px] font-bold flex items-center gap-1 transition-colors"
                 >
                   <span>Review & Decide</span>
-                  <ArrowRight className="w-3 h-3 text-[#C9F36A]" />
+                  <ArrowRight className="w-3 h-3 text-[#BDA8F0]" />
                 </Link>
               </div>
             </div>
